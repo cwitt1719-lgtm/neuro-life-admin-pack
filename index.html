@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0a0614" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Neuro Life Admin Pack</title>
-  <meta name="description" content="Four household apps in one Gumroad bundle. $9.99. Data stays on the phone." />
+  <meta name="description" content="Four Neuro household apps. $9.99 on Gumroad. Data stays on the phone." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="icon" href="icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,41 +28,46 @@
       <img class="logo" src="icon.svg" alt="" />
       <div class="brand">
         <h1>Neuro Life Admin Pack</h1>
-        <p>Four essential Neuro tools. One checkout.</p>
+        <p>Four apps. One checkout. Stays on this phone.</p>
       </div>
     </header>
-    <nav class="nav">
-      <a href="https://raw.githack.com/cwitt1719-lgtm/neuro-glitch/main/index.html">Shop</a>
-      <a href="https://neuroprojects.gumroad.com">Gumroad</a>
-      <a href="#how">How it works</a>
-    </nav>
     <section class="hero card">
-      <p class="kicker">NEURO PROJECTS BUNDLE</p>
-      <h2>Bills, chores, house facts, and subscriptions in four home-screen apps.</h2>
-      <p class="lede">One-time Gumroad checkout. No subscription. Open the files, add each app to Home Screen, done. Data stays on the phone.</p>
+      <p class="kicker">NEURO PROJECTS</p>
+      <h2>House, chores, subscriptions, bills.</h2>
+      <p class="lede">$9.99 one time. Was $16.96. Open each app. Add to Home Screen. Data stays on the device.</p>
       <div class="toolbar">
-        <a class="btn btn-qr" href="https://neuroprojects.gumroad.com">Buy on Gumroad · $9.99</a>
+        <a class="btn btn-qr" href="https://neuroprojects.gumroad.com/l/Neuro-Life">Buy on Gumroad · $9.99</a>
       </div>
-      <p class="hint" style="margin:10px 0 0">Was $16.96. Sale price $9.99.</p>
     </section>
-    <section id="inside">
-      <h2 class="sec">What is inside</h2>
-      <p class="hint">Four apps. Same delivery as the single listings.</p>
+    <section>
+      <h2 class="sec">The four apps</h2>
       <article class="product">
         <div class="product-head"><h3>Neuro-House</h3></div>
-        <p>Household binder. Contacts, notes, how the house works.</p>
+        <p>Household binder. How the house works.</p>
+        <div class="toolbar">
+          <a class="btn btn-ghost" href="https://raw.githack.com/cwitt1719-lgtm/neuro-house-app/main/index.html">Open app</a>
+        </div>
       </article>
       <article class="product">
         <div class="product-head"><h3>Neuro-Chores</h3></div>
-        <p>Family chore board. Kids tap done. Points. Rewards.</p>
+        <p>Family chore board. Kids tap done.</p>
+        <div class="toolbar">
+          <a class="btn btn-ghost" href="https://neuroprojects.gumroad.com/l/wyvtxj">Open listing</a>
+        </div>
       </article>
       <article class="product">
         <div class="product-head"><h3>Neuro-Leak</h3></div>
-        <p>Subscription tracker. Upcoming charges and cancel-by dates.</p>
+        <p>Subscription tracker. Upcoming charges.</p>
+        <div class="toolbar">
+          <a class="btn btn-ghost" href="https://neuroprojects.gumroad.com/l/Neuro-Leak">Open listing</a>
+        </div>
       </article>
       <article class="product">
         <div class="product-head"><h3>Neuro-Budget</h3></div>
-        <p>Attach bills to a paycheck. No monthly spreadsheet.</p>
+        <p>Attach bills to a paycheck.</p>
+        <div class="toolbar">
+          <a class="btn btn-ghost" href="https://neuroprojects.gumroad.com">Open store</a>
+        </div>
       </article>
     </section>
     <section id="how" class="card">
@@ -70,18 +79,12 @@
         <li>Your data never leaves the device.</li>
       </ol>
     </section>
-    <section class="card">
-      <h2 class="sec">Get the pack</h2>
-      <p class="lede">$9.99 one time. Keep the admin off your working memory.</p>
-      <div class="toolbar">
-        <a class="btn btn-qr" href="https://neuroprojects.gumroad.com">Buy on Gumroad</a>
-      </div>
-    </section>
     <footer>
       <p>Neuro-Glitch · Calin Witt</p>
-      <p><a class="foot-link" href="https://neuroprojects.gumroad.com">neuroprojects.gumroad.com</a></p>
+      <p><a class="foot-link" href="https://neuroprojects.gumroad.com/l/Neuro-Life">neuroprojects.gumroad.com/l/Neuro-Life</a></p>
       <p><a class="foot-link" href="mailto:neuroprojects.help@gmail.com">neuroprojects.help@gmail.com</a></p>
     </footer>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
